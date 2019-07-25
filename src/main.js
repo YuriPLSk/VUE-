@@ -1,5 +1,5 @@
  // 入口文件
-import Vue from 'vue'
+import Vue from 'vue'   
 import './lib/mui/css/mui.css'
 import app from './app.vue'
 import {Header} from 'mint-ui'
