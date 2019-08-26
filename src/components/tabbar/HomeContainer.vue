@@ -7,25 +7,25 @@
   			<mt-swipe-item>3</mt-swipe-item>
 		</mt-swipe>
 		<!-- 6宫格 -->
-		<ul style="background-color: white" class="mui-table-view mui-grid-view mui-grid-9">
-	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		<ul style="background-color: white;border:none" class="mui-table-view mui-grid-view mui-grid-9">
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
 	                <span class="mui-icon mui-icon-home"></span>
-	                <div class="mui-media-body">Home</div></a></li>
-	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                <div class="mui-media-body">新闻</div></a></li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
 	                <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
-	                <div class="mui-media-body">Email</div></a></li>
-	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                <div class="mui-media-body">图片分享</div></a></li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
 	                <span class="mui-icon mui-icon-chatbubble"></span>
-	                <div class="mui-media-body">Chat</div></a></li>
-	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                <div class="mui-media-body">商城购买</div></a></li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
 	                <span class="mui-icon mui-icon-location"></span>
-	                <div class="mui-media-body">location</div></a></li>
-	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                <div class="mui-media-body">留言反馈</div></a></li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
 	                <span class="mui-icon mui-icon-search"></span>
-	                <div class="mui-media-body">Search</div></a></li>
-	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                <div class="mui-media-body">视频专区</div></a></li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
 	                <span class="mui-icon mui-icon-phone"></span>
-	                <div class="mui-media-body">Phone</div></a></li>
+	                <div class="mui-media-body">联系我们</div></a></li>
 	        
 	    </ul> 
 	
@@ -43,10 +43,10 @@
 		},
 		methods:{
 			getLunbotu(){
-				this.$http.get('http://vue.studyit.io/api/getLunbo').then(result=>{
-					if(result.body.status===0){
-						this.lunbotuList=result.body.message;
-					}});
+				// this.$http.get('http://vue.studyit.io/api/getLunbo').then(result=>{
+				// 	if(result.body.status===0){
+				// 		this.lunbotuList=result.body.message;
+				// 	}});
 			}
 		}
 	}
@@ -64,6 +64,9 @@
 		&:nth-child(3){
 			background-color: #234;
 		}
+	 }
+	 .ul{
+	 	background-color:#fff;
 	 }
 	}	
 	

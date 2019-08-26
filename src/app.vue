@@ -3,7 +3,9 @@
 	<!-- header -->
 	<mt-header fixed title="Vue"></mt-header>
 	<!-- router-view -->
+	<transition>
 	<router-view></router-view>	
+	</transition>	
 	<!-- Tabbar -->
 	<nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
@@ -33,8 +35,23 @@
 // 需要先导入该组件（按需导入）
 
 </script>
-<style lang="scss" scoped>
+<style lang="css" scoped>
 .app-container{
 	padding-top: 40px;
+	overflow-x: hidden;
+	/*解决在切换路由时头尾也会移动*/
+}
+.v-enter{
+	opacity:0;
+	transform:translateX(100%);
+}
+.v-leave-to{
+	opacity:0;
+	transform:translateX(-100%);
+	position: absolute;
+}
+.v-enter-active,
+.v-leave-active{
+	transition:all 0.5s ease;
 }
 </style>
