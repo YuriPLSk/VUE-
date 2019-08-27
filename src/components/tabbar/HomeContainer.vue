@@ -8,9 +8,9 @@
 		</mt-swipe>
 		<!-- 6宫格 -->
 		<ul style="background-color: white;border:none" class="mui-table-view mui-grid-view mui-grid-9">
-	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><router-link to="/home/newslist">
 	                <span class="mui-icon mui-icon-home"></span>
-	                <div class="mui-media-body">新闻</div></a></li>
+	                <div class="mui-media-body">新闻</div></router-link></li>
 	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
 	                <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
 	                <div class="mui-media-body">图片分享</div></a></li>
